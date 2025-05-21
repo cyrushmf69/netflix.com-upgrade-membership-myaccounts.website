@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import HeroBanner from "@/components/HeroBanner";
 import MovieRow from "@/components/MovieRow";
 import Footer from "@/components/Footer";
+import OfferButton from "@/components/OfferButton";
 import { trendingNow, netflixOriginals, topRated, actionMovies } from "@/data/mockData";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
         <HeroBanner />
         <div className="mt-[-150px] relative z-10">
           <MovieRow title="Trending Now" movies={trendingNow} />
+          <OfferButton />
           <MovieRow title="Netflix Originals" movies={netflixOriginals} />
           <MovieRow title="Top Rated" movies={topRated} />
           <MovieRow title="Action Movies" movies={actionMovies} />
