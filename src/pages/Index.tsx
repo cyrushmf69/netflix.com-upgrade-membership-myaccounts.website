@@ -12,8 +12,8 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroBanner />
-        <div className="mt-[-150px] relative z-10">
-          <MovieRow title="Trending Now" movies={trendingNow} />
+        <div className="relative z-10">
+          <MovieRow title="Popular on Netflix" movies={trendingNow} />
           <OfferButton />
           <MovieRow title="Netflix Originals" movies={netflixOriginals} />
           <MovieRow title="Top Rated" movies={topRated} />
